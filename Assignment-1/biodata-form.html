@@ -5,8 +5,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biodata Form</title>
+    <style>.content{margin:auto; max-width: 600px;}</style>
 </head>
-<body>
-    
+
+<body bgcolor="#faebd7">
+    <div class="content">
+    <h1 align="center">Bio Data Form</h1>
+      
+    <form action="" method="GET">
+        
+        <!-- --------------------------Personal Information-------------------------------- -->
+        <fieldset>
+            <legend><strong>Personal Information</strong></legend>
+            
+            <!-- Name -->
+            <label for="firstname">First Name: </label>
+            <input type="text" id="firstname" placeholder="Enter First Name" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="lastname">Last Name: </label>
+            <input type="text" id="lastname" placeholder="Enter Last Name" required><br><br>
+           
+            <!-- Gender -->
+            <label>Gender: </label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+            <input type="radio" name="gender" id="male" required>
+            <label for="male">Male</label>       
+            <input type="radio" name="gender" id="female">
+            <label for="female">Female</label>       
+            <input type="radio" name="gender" id="others">
+            <label for="others">Others</label><br><br>
+
+            <!-- DOB -->
+            <label for="dob">D.O.B. : </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="date" id="dob" required><br><br>
+
+            <!-- E-mail -->
+            <label for="email">E-mail: </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="email" name="email" id="email" placeholder="Enter your e-mail" required><br><br>
+
+            <!-- Phone -->
+            <label for="phone">Phone: </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="tel" name="phone" id="phone" placeholder="+91" maxlength="10" required><br><br>
+
+            <!-- Height -->
+            <label for="height">Height: </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+            <input type="number" name="height" id="feet" min="1" max="9" placeholder="0" required>
+            <label for="feet">Feet</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="number" name="height" id="inches" min="0" max="11" placeholder="0">
+            <label for="feet">Inches</label>
+        </fieldset><br>
+
+        <!-- ---------------------------------Educational--------------------------------- -->
+        <fieldset>
+            <legend><strong>Education</strong></legend>
+
+            <!-- College -->
+            <label for="college">College: </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" name="college" id="college" placeholder="Enter College Name" required><br><br>
+
+            <!-- Semester -->
+            <label for="sem">Semester : </label>&nbsp;&nbsp;
+            <input type="number" name="sem" min="1" max="8" id="sem" placeholder="Sem" required><br><br>
+            
+            <!-- Stream -->
+            <label for="stream">Stream: </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <select name="stream" id="stream" required>
+                <option disabled default>Select Stream</option>
+                <option value="CSE">Computer Science</option>
+                <option value="IT">Informational Technology</option>
+                <option value="ME">Mechanical Engineering</option>
+                <option value="ECE">Electronics & Communication</option>
+                <option value="EE">Electrical Engineering</option>
+                <option value="CE">Civil Engineering</option>
+                <option value="O">Other</option>
+            </select><br><br>
+
+            <!-- Marksheet -->
+            <label for="marksheet">Marksheet: </label>&nbsp;
+            <input type="file" name="" id="marksheet"><br>
+        </fieldset><br>
+
+        <center><input type="submit" width="400"></center>
+    </form>
+    </div>
 </body>
 </html>

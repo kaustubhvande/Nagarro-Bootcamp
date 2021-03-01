@@ -1,0 +1,63 @@
+body {
+  background: whitesmoke;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;  
+  position: relative;
+  margin: 0px;
+}
+
+.wrapper{
+    width: 25%;
+    background-color: #0088cc;
+    position: relative;
+    margin: auto;
+    top: 0px;
+    left: 0px;
+    font-family: sans-serif;
+    z-index: -2;
+}
+
+#header{
+    display: block;
+    position: absolute;
+    margin-top: 0px;
+    position: fixed;
+    padding: 10px 47px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    color: whitesmoke;
+    background-color: #0088cc;
+}
+
+.list{
+    position: relative;
+    top: 65px;
+    z-index: -1;
+}
+
+.list ul{
+    list-style-type: none;
+    padding-left: 30px; 
+    margin: 0; 
+    color: whitesmoke;
+}
+
+.list ul li{
+    margin: 5px;
+    border-bottom: 2px solid whitesmoke;
+}
+
+.list ul li:hover{
+    background-color: whitesmoke;
+}
+
+.initials{
+    background-color: whitesmoke;
+    display: block;
+    position: sticky;
+    top: 65px;
+    font-weight: 700;
+    color: #292929;   
+}
